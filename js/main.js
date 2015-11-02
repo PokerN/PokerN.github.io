@@ -381,12 +381,15 @@ $(document).on({
         $('.scroller').css('opacity','0');
     },
     'pjax:end': function () {
+        
         NProgress.done();
         $('.scroller').css('opacity','1').removeClass('fadeOut').addClass('fadeIn');
         afterPjax();
         $('#navbar-toc').hide();
         $('.nexus').css('width', 'auto');
         $('#navbar-title a').hide();
+        if (typeof MathJax !== 'undefined') // support MathJax
+            MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
     },
     'pjax:popstate': function () {
         setTimeout("$('#toc').find('li').remove();",100);
