@@ -688,7 +688,7 @@ pre .comment,
 pre .template_comment,
 .diff pre .header,
 pre .javadoc {
-  color: #998;
+  color: #738191;
   font-style: italic
 }
 
@@ -700,7 +700,7 @@ pre .winutils,
 pre .subst,
 pre .request,
 pre .status {
-  color: #333;
+  color: #00193a;
   font-weight: bold
 }
 
@@ -714,7 +714,7 @@ pre .string,
 pre .tag pre .value,
 pre .phpdoc,
 .tex pre .formula {
-  color: #d14
+  color: #0048ab
 }
 
 pre .title,
